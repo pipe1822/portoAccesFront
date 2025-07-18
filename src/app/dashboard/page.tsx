@@ -35,7 +35,7 @@ export default function DashboardPage() {
       const data = await res.json();
       setQrValue(data.qr_token || "");
       setLoading(false);
-    } catch (err) {
+    } catch {
       setError("Error de conexión con el servidor");
       setLoading(false);
     }

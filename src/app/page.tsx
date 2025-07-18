@@ -43,7 +43,7 @@ export default function LoginPage() {
         setError("Respuesta inválida del servidor");
       }
       setLoading(false);
-    } catch (err) {
+    } catch {
       setError("Error de conexión con el servidor");
       setLoading(false);
     }

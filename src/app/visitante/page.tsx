@@ -46,7 +46,7 @@ export default function VisitantePage() {
       setQrValue(data.tokenQR || "");
       setExpira(data.expira || null);
       setLoading(false);
-    } catch (err) {
+    } catch {
       setError("Error de conexión con el servidor");
       setLoading(false);
     }

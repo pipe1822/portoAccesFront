@@ -40,7 +40,7 @@ export default function PorteriaPage() {
           mensaje: data.mensaje || "QR inválido o expirado",
         });
       }
-    } catch (err) {
+    } catch {
       setScanResult({ valido: false, mensaje: "Error de conexión con el servidor" });
     }
   };

@@ -6,7 +6,7 @@ interface User {
   nombre: string;
   email: string;
   tipo_usuario: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 interface AuthContextType {
